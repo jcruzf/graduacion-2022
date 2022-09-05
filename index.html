@@ -50,12 +50,12 @@
 		$(document).ready(function() {
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3'],
+	    		anchors: ['invitacion', 'fecha', 'generacion'],
 	    		navigation: {
 		            'textColor': '#f2f2f2',
 		            'bulletsColor': '#ccc',
 		            'position': 'right',
-		            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+		            'tooltips': ['Invitación', 'Fecha', 'Generación', 'Page 4']
 		        }
 			});
 	    });
@@ -63,17 +63,18 @@
 
 
 </head>
+
+
 <body>
 
 	<div id="pagepiling">
-
-	    
+ 
 	    <div class="section" id="seccion-portada">
 	    <div class="overlay"></div>
 	    	
-	    	<div class="container animate-box">
+	    	<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center section-heading">
+					<div class="col-md-12 text-center section-heading animate-box">
 
 						<img src="img/svg/ua_logo.svg" alt="Universidad AHMSA">
 
@@ -108,68 +109,79 @@
 
 
 
-	<div class="section" id="seccion-invitacion">
-	    	
-	    <div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center section-heading">
+		<div class="section" id="seccion-invitacion">
+		    	
+		    <div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center section-heading">
 
 
-					<div id="fecha">
-						<h2>FECHA</h2>
-						<div class="datewed">Jueves 22 de Septiembre, 2022</div>
+						<div id="fecha">
+							<h2>FECHA</h2>
+							<div class="datewed">Jueves 22 de Septiembre, 2022</div>
 
-						<div id="contador">
-							<p class="countdown">
-								<span id="days"></span>
-								<span id="hours"></span>
-								<span id="minutes"></span>
-								<span id="seconds"></span>
-							</p>
+							<div id="contador">
+								<p class="countdown">
+									<span id="days"></span>
+									<span id="hours"></span>
+									<span id="minutes"></span>
+									<span id="seconds"></span>
+								</p>
+							</div>
+						</div>
+
+						<div id="lugar">
+							<h2>LUGAR</h2>
+							<h3>Auditorio del Instituto Central Coahuila</h3>
+						</div>
+
+						<div class="map-responsive">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d862.3759740761732!2d-101.42184723882143!3d26.889595369448788!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868bd20f43c1b7a9%3A0xf02de5c78071710c!2sInstituto%20Central%20Coahuila%20A.C.!5e1!3m2!1ses!2smx!4v1661447786970!5m2!1ses!2smx" style="border:0" width="600" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<div class="section" id="seccion-generacion">
+		<div class="overlay"></div>
+		    	
+		    <div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+
+						<h1 class="holder"><span>GENERACIÓN</span></h1>
+						<h2>2020 - 2022</h2>
+
+						<img src="img/birrete.png" alt="Universidad AHMSA">
+
+					</div>
+				</div>
+			</div>
+
+
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<img class="logo_ahmsa" src="img/svg/ahmsa_logo.svg" alt="AHMSA">
+							<img class="logo_rh" src="img/svg/rh_logo.svg" alt="Dirección Corporativa de Recursos Humanos">
 						</div>
 					</div>
-
-					<div id="lugar">
-						<h2>LUGAR</h2>
-						<h3>Auditorio del Instituto Central Coahuila</h3>
-					</div>
-
-					<div class="map-responsive">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d862.3759740761732!2d-101.42184723882143!3d26.889595369448788!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868bd20f43c1b7a9%3A0xf02de5c78071710c!2sInstituto%20Central%20Coahuila%20A.C.!5e1!3m2!1ses!2smx!4v1661447786970!5m2!1ses!2smx" style="border:0" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-
 				</div>
-			</div>
+			</footer>
+
 		</div>
 
 	</div>
 
-
-
-
-
-
-	<div class="section" id="seccion-generacion">
-	<div class="overlay"></div>
-	    	
-	    <div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center animate-box">
-
-					<h1 class="holder"><span>GENERACIÓN</span></h1>
-					<h2>2020 - 2022</h2>
-
-					<img src="img/birrete.png" alt="Universidad AHMSA">
-
-				</div>
-			</div>
-		</div>
-
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#B3B3B3"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#EE3424"/></svg>
 	</div>
-
-	
-
-
 
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>

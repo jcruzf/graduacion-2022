@@ -17,8 +17,6 @@
 
 	};
 
-
-
 	// Animations
 	var contentWayPoint = function() {
 		var i = 0;
@@ -118,7 +116,18 @@
 		 clearInterval(x);
 		 document.getElementById("demo").innerHTML = "La Ceremonia de Graduación finalizó";
 		}
-		}, 1000);	
+		}, 1000);
+
+
+	// loader
+	var loader = function() {
+		setTimeout(function() { 
+			if($('#ftco-loader').length > 0) {
+				$('#ftco-loader').removeClass('show');
+			}
+		}, 1);
+	};
+	loader();
 	
 
 	// Document on load.
