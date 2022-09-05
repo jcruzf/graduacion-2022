@@ -49,14 +49,14 @@
 
 		$(document).ready(function() {
 	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
+	    		menu: null,
 	    		anchors: ['invitacion', 'fecha', 'generacion'],
 	    		navigation: {
-		            'textColor': '#f2f2f2',
 		            'bulletsColor': '#ccc',
-		            'position': 'right',
-		            'tooltips': ['Invitación', 'Fecha', 'Generación', 'Page 4']
-		        }
+		            'tooltips': ['Invitación', 'Fecha', 'Generación']
+		        },
+		        scrollingSpeed: 700,
+        		easing: 'swing'
 			});
 	    });
     </script>

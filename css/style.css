@@ -193,10 +193,6 @@ h1, h2, h3, h4, h5, h6 {
 #seccion-invitacion {
   background: #000;
 }
-#seccion-portada {
-  background-image: url(../img/portada_bg.jpg);
-  background-position: center;
-}
 #seccion-invitacion .countdown {
   color: #fff;
   margin: 10px 0 30px 0;
