@@ -155,6 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 #seccion-portada {
   background-image: url(../img/portada_bg.jpg);
   background-position: center;
+  z-index: 100 !important;
 }
 #seccion-portada .section-heading img{
   height: 160px;
